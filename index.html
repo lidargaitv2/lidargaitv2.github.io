@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="Gait Recognition on 3D Point Clouds.">
+  <meta name="description" content="Gait Recognition on 3D Point Clouds.">
   <meta name="keywords" content="Gait, LiDAR, Point cloud">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>LidarGait++</title>
@@ -22,15 +22,13 @@
     gtag('config', 'G-PYVRSFMDRL');
   </script>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/sustech.png">
 
@@ -40,39 +38,40 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-      <a class="navbar-item" href="https://chuanfushen.github.io">
-      <span class="icon">
-          <i class="fas fa-home"></i>
-      </span>
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+        <a class="navbar-item" href="https://chuanfushen.github.io">
+          <span class="icon">
+            <i class="fas fa-home"></i>
+          </span>
+        </a>
 
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link">
-          More Research
-        </a>
-        <div class="navbar-dropdown">
-       <a class="navbar-item" href="https://lidargait.github.io/">
-            LidarGait
-        </a>
-         <a class="navbar-item" href="https://github.com/ShiqiYu/OpenGait">
-            OpenGait
-        </a>
-       <a class="navbar-item" href="https://zhouzi180.github.io/Scoliosis1K/">
-            Scoliosis1K
-        </a>
-           <!-- <a class="navbar-item" href="https://nerfies.github.io">
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://lidargait.github.io/">
+              LidarGait
+            </a>
+            <a class="navbar-item" href="https://github.com/ShiqiYu/OpenGait">
+              OpenGait
+            </a>
+            <a class="navbar-item" href="https://zhouzi180.github.io/Scoliosis1K/">
+              Scoliosis1K
+            </a>
+            <!-- <a class="navbar-item" href="https://nerfies.github.io">
             Nerfies
           </a>
           <a class="navbar-item" href="https://latentfusion.github.io">
@@ -81,29 +80,32 @@
           <a class="navbar-item" href="https://photoshape.github.io">
             PhotoShape
           </a> -->
+          </div>
         </div>
       </div>
+
     </div>
-
-  </div>
-</nav>
+  </nav>
 
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">LidarGait++: Learning Local Features and Size Awareness from LiDAR Point Clouds for 3D Gait Recognition</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://chuanfushen.github.io">Chuanfu Shen</a><sup>1,2</sup>,</span>
-            <span class="author-block">
-              <a >Rui Wang</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=inRIcS0AAAAJ&sortby=pubdate">Lixin Duan</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.sustech.edu.cn/en/faculties/yushiqi.html">Shiqi Yu</a><sup>2</sup>,</span>
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">LidarGait++: Learning Local Features and Size Awareness from LiDAR
+              Point Clouds for 3D Gait Recognition</h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://chuanfushen.github.io">Chuanfu Shen</a><sup>1,2</sup>,</span>
+              <span class="author-block">
+                <a>Rui Wang</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a
+                  href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=inRIcS0AAAAJ&sortby=pubdate">Lixin
+                  Duan</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="https://www.sustech.edu.cn/en/faculties/yushiqi.html">Shiqi Yu</a><sup>2</sup>,</span>
               <!-- <span class="author-block">
               <a href="https://utkarshsinha.com">Utkarsh Sinha</a><sup>2</sup>,</span>
             <span class="author-block">
@@ -121,26 +123,27 @@
             <span class="author-block">
               <a href="http://www.ricardomartinbrualla.com">Ricardo Martin-Brualla</a><sup>2</sup>
             </span> -->
-          </div>
+            </div>
 
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>Shenzhen Institute for Advanced Study, University of Electronic Science and Technology of China</span>
-            <span class="author-block"><sup>2</sup>Southern University of Science and Technology</span>
-          </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Shenzhen Institute for Advanced Study, University of Electronic
+                Science and Technology of China</span>
+              <span class="author-block"><sup>2</sup>Southern University of Science and Technology</span>
+            </div>
 
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="https://openaccess.thecvf.com/content/CVPR2023/papers/Shen_LidarGait_Benchmarking_3D_Gait_Recognition_With_Point_Clouds_CVPR_2023_paper.pdf"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="https://openaccess.thecvf.com//content/CVPR2025/papers/Shen_LidarGait_Learning_Local_Features_and_Size_Awareness_from_LiDAR_Point_CVPR_2025_paper.pdf"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- <span class="link-block">
                 <a href="https://arxiv.org/pdf/2211.10598.pdf"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -148,9 +151,9 @@
                   </span>
                   <span>arXiv</span>
                 </a>
-              </span>
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
+              </span> -->
+                <!-- Video Link. -->
+                <!-- <span class="link-block">
                 <a href="https://www.youtube.com/watch?v=Z_jKaETR9Rk"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
@@ -159,47 +162,46 @@
                   <span>Video</span>
                 </a>
               </span> -->
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com/ShiqiYu/OpenGait/blob/master/datasets/SUSTech1K/README.md"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/ShiqiYu/OpenGait/blob/master/configs/lidargaitv2/README.md"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
+                    </span>
+                    <span>Code</span>
                   </a>
-              </span>
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://github.com/google/nerfies/releases/tag/0.1"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                </span>
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://lidargait.github.io/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span> -->
+                    </span>
+                    <span>DataSet</span>
                   </a>
-            </div>
+              </div>
 
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-<!--       <video id="teaser" autoplay muted loop playsinline height="100%">
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <!--       <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/pc.mov"
                 type="video/mp4">
       </video> -->
-      <h2 class="subtitle has-text-centered">
-        TBD.
-      </h2>
+        <h2 class="subtitle has-text-centered">
+          TL;DR LidarGait++ is an end-to-end point-based model for 3D gait recognition.
+        </h2>
+      </div>
     </div>
-  </div>
-<!-- 
+    <!-- 
 
   <h3 class="title is-4">Download</h3>
   <div class="content has-text-justified">
@@ -208,38 +210,231 @@
       and sending it to the official contact email address (shencf2019@mail.sustech.edu.cn)</p>
     <p>Before obtain the password for dataset, feel free to download first via link: (<a href="https://drive.google.com/drive/folders/1ac7BEDfKX32QcNTKPB-VQW42AL3Weieh?usp=sharing" target="_blabk" style="color: #09f;">GoogleDrive</a>, <a href="https://pan.baidu.com/s/1Y5_50YD1zDZuRsFNEu4qlg?pwd=4zbf" target="_blabk" style="color: #09f;">BaiduYun</a>)</p>
   </div> -->
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Point clouds have gained growing interest in gait recognition. However, current methods, which typically
+              convert point clouds into 3D voxels, often fail to extract essential gait-specific features. 
+            </p>
+            <p>
+              In this
+              paper, we explore gait recognition within 3D point clouds from the perspectives of architectural designs
+              and gait representation modeling. We indicate the significance of local and body size features in 3D gait
+              recognition and introduce LidarGait++, a novel framework combining advanced local representation learning
+              techniques with a novel size-aware learning mechanism. Specifically, LidarGait++ utilizes Set Abstraction
+              (SA) layer and Pyramid Point Pooling (P^3) layer for learning locally fine-grained gait representations
+              from 3D point clouds directly. Both the SA and P^3 layers can be further enhanced with size-aware learning
+              to make the model aware of the actual size of the subjects. 
+            </p>
+            <p>
+              In the end, LidarGait++ not only outperforms
+              current state-of-the-art methods, but it also consistently demonstrates robust performance and great
+              generalizability on two benchmarks. Our extensive experiments validate the effectiveness of size and local
+              features in 3D gait recognition.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+
+
+      <!--/ Paper video. -->
+    </div>
+  </section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <!--/ Matting. -->
+
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width ">
+        <!-- <h2 class="title is-3  has-text-centered">The SUSTech1K Benchmark</h2> -->
+
+        <!-- Interpolating. -->
+        <h3 class="title is-4  has-text-centered">Our proposed baseline: <a href="https://github.com/ShiqiYu/OpenGait/blob/master/configs/lidargaitv2/README.md">LidarGait++ <i class="fab fa-github"></i></a></h3>
+        <div class="content has-text-justified">
+          <!-- <p>
+            (Left) Each participant walks normally (top row), followed by walking with a random variance as shown in the bottom row.
+          </p>
+          <p>
+            (Right) SUSTech1K collects data in point cloud and RGB modality with diverse realistic variances.
+          </p> -->
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+          <div class="column is-full-width has-text-centered">
+            <img src="./static/images/lidargaitv2.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <!-- <p>Start Frame</p> -->
+          </div>
+
+        </div>
+
+        <div class="columns is-centered">
+
+
+    
+          <!-- Matting. -->
+          <div class="column">
+            
+            <h2 class="title is-4">Size-aware Encoding</h2>
+            <div class="columns is-centered">
+              <div class="column content">
+                <!-- <p>
+                  The SUSTech1K dataset preserves the variances found in ex- isting datasets, such as Normal, Bag, Clothes Changing, Views and Object Carrying, while also considering other common but challenging variances encountered outdoors, including Occlusion, Illumination, Uniform, and Umbrella.
+                </p> -->
+                <img src="./static/images/sizeencoding.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+                <!-- <img src="./static/images/interpolate_start.jpg"
+                class="interpolation-image"
+                alt="Interpolate start reference image." /> -->
+                <!-- <video id="matting-video" controls playsinline height="100%">
+                  <source src="./static/videos/matting.mp4"
+                          type="video/mp4">
+                </video> -->
+              </div>
+    
+            </div>
+          </div>
+
+          <!-- Visual Effects. -->
+          <div class="column">
+            <div class="content">
+              <h2 class="title is-4">Size-aware Point Partitioning</h2>
+              <!-- <p>
+                The SUSTech1K dataset is a synchronized multimodal dataset, with timestamped frames for each modality of frames.
+              </p> -->
+              <img src="./static/images/ppp.png"
+              class="interpolation-image"
+              alt="Interpolate start reference image." />
+            </div>
+          </div>
+          <!--/ Visual Effects. -->
+
+        </div>        
+
+        <br/>
+        <!--/ Interpolating. -->
+
+        <!-- Re-rendering. -->
+        <h3 class="title is-4">Evalution on SUSTech1K dataset</h3>
+        <div class="content has-text-justified">
+          <p>
+            <!-- LiDAR modality and RGB modality are represented in blue and yellow, respectively. It shows that SUSTech1K dataset is scalable, multimodal, and diverse for the study of 3D gait recognition. CR, BG, UB, UF, NT, NM, OC, and CL denote attributes of Carrying, Bag, Umbrella, Uniform, Night, Occlusion, and Clothing, respectively.  -->
+        </div>
+        <div class="content has-text-centered">
+          <div class="column is-full-width has-text-centered">
+            <img src="./static/images/results.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+            <!-- <p>Start Frame</p> -->
+          </div>
+        </div>
+        <!--/ Re-rendering. -->
+
+      </div>
+    </div>
+    <!--/ Animation. -->
+
+
+    <!-- <h3 class="title is-4">Download</h3>
+    <div class="content has-text-justified">
+      <p>All users can obtain and use this dataset and only after signing the
+        <a href="./static/resources/SUSTech1KAgreement.pdf" target="_blabk" style="color: #09f;">Agreement</a>
+        and sending it to the official contact email address (shencf2019@mail.sustech.edu.cn)</p>
+      <p>Before obtain the password for dataset, feel free to download first via link: (<a href="https://connecthkuhk-my.sharepoint.com/:f:/g/personal/noahshen_connect_hku_hk/EgDfZ-oO2hlHrtuctisJZYsBls_dKJcglBeETVGwSdLAug?e=AUcZcq" target="_blabk" style="color: #09f;">OneDrive</a>, <a href="https://pan.baidu.com/s/1Y5_50YD1zDZuRsFNEu4qlg?pwd=4zbf" target="_blabk" style="color: #09f;">BaiduYun</a>)</p>
+    </div> -->
+
+    <!-- Concurrent Work. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h3 class="title is-4">Comparison with LidarGait
+          <!-- <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a> -->
+      </h3>
+
+      <div class="content has-text-justified">
+        <p>
+          <!-- LiDAR modality and RGB modality are represented in blue and yellow, respectively. It shows that SUSTech1K dataset is scalable, multimodal, and diverse for the study of 3D gait recognition. CR, BG, UB, UF, NT, NM, OC, and CL denote attributes of Carrying, Bag, Umbrella, Uniform, Night, Occlusion, and Clothing, respectively.  -->
+      </div>
+      <div class="content has-text-centered">
+        <div class="column is-full-width has-text-centered">
+          <img src="./static/images/comparison.png"
+               class="interpolation-image"
+               alt="Interpolate start reference image."/>
+          <!-- <p>Start Frame</p> -->
+        </div>
+      </div>
+
+
+        <!-- <div class="content has-text-justified">
+          <p>
+            There's a lot of excellent work that was introduced around the same time as ours.
+          </p>
+          <p>
+            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
+          </p>
+          <p>
+            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
+            both use deformation fields to model non-rigid scenes.
+          </p>
+          <p>
+            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
+          </p>
+          <p>
+            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
+          </p>
+        </div> -->
+      </div>
+    </div>
+    <!--/ Concurrent Work. -->
+
+  </div>
 </section>
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-<!--       <a class="icon-link"
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <!--       <a class="icon-link"
          href="./static/videos/nerfies_paper.pdf">
         <i class="fas fa-file-pdf"></i>
       </a>
       <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a> -->
-<!--       <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=SodJ_5mg21KDi_Eo3nR4Cup4m63JoFw82M_uO5nCrKM&cl=ffffff&w=a"></script>
-<!-- <a href="https://www.revolvermaps.com/livestats/5d5zhqlyyot/"><img src="//rf.revolvermaps.com/h/m/a/0/ff0000/128/0/5d5zhqlyyot.png" width="256" height="128" alt="Map" style="border:0;"></a>    </div> --> -->
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <!-- <p>
+      <script type="text/javascript" id="mmvst_globe" src="//mapmyvisitors.com/globe.js?d=HiIJ5cpsHul4yQIPMuuP9q5xAsJcTJbaNUzTYxg5CIU"></script>
+<!-- <a href="https://www.revolvermaps.com/livestats/5d5zhqlyyot/"><img src="//rf.revolvermaps.com/h/m/a/0/ff0000/128/0/5d5zhqlyyot.png" width="256" height="128" alt="Map" style="border:0;"></a>    </div> -->
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <!-- <p>
             This website is licensed under a <a rel="license"
                                                 href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p> -->
-          <p>
-            We made this site with the code from <a
-              href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
-          </p>
+              <p>
+                We made this site with the code from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
